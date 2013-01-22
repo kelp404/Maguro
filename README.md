@@ -5,12 +5,10 @@ Kelp http://kelp.phate.org/
 [MIT]: http://www.opensource.org/licenses/mit-license.php
 
 
+  Contact Us View  |  Search Knowledge Base  |  Knowledge Base
 :---------:|:---------:|:---------:
 <img src='https://raw.github.com/Kelp404/Maguro/master/Images/01.png' height='500px' width='257px' /> | <img src='https://raw.github.com/Kelp404/Maguro/master/Images/02.png' height='500px' width='257px' /> | <img src='https://raw.github.com/Kelp404/Maguro/master/Images/03.png' height='500px' width='257px' />
 
-
-
-A contact us library for <a href='http://www.uservoice.com/'>UserVoice</a>.
 
 
 
@@ -36,3 +34,4 @@ config.email = @"name@gmail.com";
 http://www.uservoice.com/ios/  
 https://github.com/uservoice/uservoice-iphone-example  
 https://github.com/uservoice/uservoice-iphone-sdk  
+http://developer.uservoice.com/docs/api/reference/
