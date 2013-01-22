@@ -125,7 +125,7 @@
         if (_textMessage == nil) {
             _textMessage = [[UITextView alloc] initWithFrame:CGRectMake(_cellBound.width, 0, _tableView.frame.size.width - _cellBound.width * 2, TEXT_MESSAGE_HEIGHT)];
             _textMessage.font = [UIFont systemFontOfSize:17];
-            _textMessage.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
+            _textMessage.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             _textMessage.backgroundColor = [UIColor clearColor];
             
             // load message from user defaults

@@ -29,7 +29,7 @@
     }
     else {
         _cellBound.height = 45;
-        _cellBound.width = 25;
+        _cellBound.width = 30;
     }
     self.view.backgroundColor = _delegate.config.backgroundColor;
 }

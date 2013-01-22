@@ -11,7 +11,6 @@
 #import "TDOAuth.h"
 #import "JSONKit.h"
 
-#pragma mark - NyaruDB Base Settings
 #if defined (__GNUC__) && (__GNUC__ >= 4)
 #define MAGURO_ATTRIBUTES(attr, ...) __attribute__((attr, ##__VA_ARGS__))
 #else  // defined (__GNUC__) && (__GNUC__ >= 4)
