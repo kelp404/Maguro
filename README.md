@@ -24,7 +24,7 @@ config.email = @"name@gmail.com";
 //    config.navigationTintColor = [UIColor colorWithRed:0.216f green:0.369f blue:0.776f alpha:1];
 //    config.backgroundColor = [UIColor whiteColor];
 
-[Maguro showContactUsWithConfig:config andCloseHandler:^{
+[Maguro showContactUsForParentViewController:self withConfig:config andCloseHandler:^{
     NSLog(@"Closed");
 }];
 ```

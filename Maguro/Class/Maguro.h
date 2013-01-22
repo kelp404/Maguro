@@ -22,10 +22,10 @@
 
 #pragma mark - Static Messages
 // handler run on the main thread
-+ (void)showContactUsWithConfig:(MaguroConfig *)config andCloseHandler:(void (^)(void))handler;
++ (void)showContactUsForParentViewController:(UIViewController *)parentViewController withConfig:(MaguroConfig *)config andCloseHandler:(void (^)(void))handler;
 
 #pragma mark - Messages
-- (void)showContactUsWithCloseHandler:(void (^)(void))handler;
+- (void)showContactUsForParentViewController:(UIViewController *)parentViewController withCloseHandler:(void (^)(void))handler;
 
 #pragma mark - Network
 // handler run on the main thread

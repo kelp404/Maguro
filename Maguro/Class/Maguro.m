@@ -32,19 +32,19 @@
 static Maguro *_instance;
 
 #pragma mark - Static Messages
-+ (void)showContactUsWithConfig:(MaguroConfig *)config andCloseHandler:(void (^)(void))handler
++ (void)showContactUsForParentViewController:(UIViewController *)parentViewController withConfig:(MaguroConfig *)config andCloseHandler:(void (^)(void))handler
 {
     if (_instance == nil) {
         _instance = [Maguro new];
     }
     
     _instance.config = config;
-    [_instance showContactUsWithCloseHandler:handler];
+    [_instance showContactUsForParentViewController:parentViewController withCloseHandler:handler];
 }
 
 
 #pragma mark - Show Maguro
-- (void)showContactUsWithCloseHandler:(void (^)(void))handler
+- (void)showContactUsForParentViewController:(UIViewController *)parentViewController withCloseHandler:(void (^)(void))handler
 {
     _closeHandler = handler;
     
@@ -58,7 +58,7 @@ static Maguro *_instance;
     _navigation.navigationBar.tintColor = _config.navigationTintColor;
     _navigation.modalPresentationStyle = UIModalPresentationFormSheet;
     
-    _rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    _rootViewController = parentViewController;
     [_rootViewController presentModalViewController:_navigation animated:YES];
 }
 
