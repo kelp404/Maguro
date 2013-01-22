@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2121FFB316ACE7A40024CB16 /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2121FFB216ACE7A40024CB16 /* icon-114.png */; };
+		2121FFB516ACE7AC0024CB16 /* icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 2121FFB416ACE7AC0024CB16 /* icon-144.png */; };
+		2121FFB716ACE7E10024CB16 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2121FFB616ACE7E10024CB16 /* icon-72.png */; };
+		2121FFB916ACE7E60024CB16 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2121FFB816ACE7E60024CB16 /* icon-57.png */; };
+		2121FFBD16ACECAA0024CB16 /* MaguroConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2121FFBC16ACECAA0024CB16 /* MaguroConfig.m */; };
+		214075E116A919B60083B776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214075E016A919B60083B776 /* UIKit.framework */; };
+		214075E316A919B60083B776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214075E216A919B60083B776 /* Foundation.framework */; };
+		214075E516A919B60083B776 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214075E416A919B60083B776 /* CoreGraphics.framework */; };
+		214075EB16A919B60083B776 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 214075E916A919B60083B776 /* InfoPlist.strings */; };
+		214075ED16A919B60083B776 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 214075EC16A919B60083B776 /* main.m */; };
+		214075F116A919B60083B776 /* MaguroAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 214075F016A919B60083B776 /* MaguroAppDelegate.m */; };
+		214075F316A919B60083B776 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 214075F216A919B60083B776 /* Default.png */; };
+		214075F516A919B60083B776 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 214075F416A919B60083B776 /* Default@2x.png */; };
+		214075F716A919B60083B776 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 214075F616A919B60083B776 /* Default-568h@2x.png */; };
+		214075FA16A919B60083B776 /* MaguroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 214075F916A919B60083B776 /* MaguroViewController.m */; };
+		214075FD16A919B60083B776 /* MaguroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 214075FB16A919B60083B776 /* MaguroView.xib */; };
+		2140760516A919B70083B776 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2140760416A919B70083B776 /* SenTestingKit.framework */; };
+		2140760616A919B70083B776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214075E016A919B60083B776 /* UIKit.framework */; };
+		2140760716A919B70083B776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214075E216A919B60083B776 /* Foundation.framework */; };
+		2140760F16A919B70083B776 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2140760D16A919B70083B776 /* InfoPlist.strings */; };
+		2140761216A919B70083B776 /* MaguroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2140761116A919B70083B776 /* MaguroTests.m */; };
+		217F64FD16AD30E3005ECAE6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 217F64FC16AD30E3005ECAE6 /* MBProgressHUD.m */; };
+		217F650116AD38D9005ECAE6 /* TDOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 217F650016AD38D9005ECAE6 /* TDOAuth.m */; };
+		217F650416AD3C25005ECAE6 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 217F650316AD3C25005ECAE6 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2193E05D16AE6DD300CF2805 /* MaguroBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2193E05C16AE6DD300CF2805 /* MaguroBaseViewController.m */; };
+		2193E06116AE6EE600CF2805 /* MaguroArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */; };
+		21F7DBB016A91EF800F92614 /* MaguroContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7DBAF16A91EF800F92614 /* MaguroContactUsViewController.m */; };
+		21F7DBB316A91F1800F92614 /* Maguro.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7DBB216A91F1800F92614 /* Maguro.m */; };
+		21F7DBBD16A91FCA00F92614 /* Maguro.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21F7DBBA16A91FCA00F92614 /* Maguro.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2140760816A919B70083B776 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 214075D316A919B60083B776 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 214075DB16A919B60083B776;
+			remoteInfo = Maguro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2121FFB216ACE7A40024CB16 /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-114.png"; path = "../icon-114.png"; sourceTree = "<group>"; };
+		2121FFB416ACE7AC0024CB16 /* icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-144.png"; path = "../icon-144.png"; sourceTree = "<group>"; };
+		2121FFB616ACE7E10024CB16 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "../icon-72.png"; sourceTree = "<group>"; };
+		2121FFB816ACE7E60024CB16 /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-57.png"; path = "../icon-57.png"; sourceTree = "<group>"; };
+		2121FFBB16ACECAA0024CB16 /* MaguroConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroConfig.h; path = Class/MaguroConfig.h; sourceTree = "<group>"; };
+		2121FFBC16ACECAA0024CB16 /* MaguroConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroConfig.m; path = Class/MaguroConfig.m; sourceTree = "<group>"; };
+		214075DC16A919B60083B776 /* Maguro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maguro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		214075E016A919B60083B776 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		214075E216A919B60083B776 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		214075E416A919B60083B776 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		214075E816A919B60083B776 /* Maguro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Maguro-Info.plist"; sourceTree = "<group>"; };
+		214075EA16A919B60083B776 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		214075EC16A919B60083B776 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		214075EE16A919B60083B776 /* Maguro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maguro-Prefix.pch"; sourceTree = "<group>"; };
+		214075EF16A919B60083B776 /* MaguroAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaguroAppDelegate.h; sourceTree = "<group>"; };
+		214075F016A919B60083B776 /* MaguroAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaguroAppDelegate.m; sourceTree = "<group>"; };
+		214075F216A919B60083B776 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		214075F416A919B60083B776 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		214075F616A919B60083B776 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		214075F816A919B60083B776 /* MaguroViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaguroViewController.h; sourceTree = "<group>"; };
+		214075F916A919B60083B776 /* MaguroViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaguroViewController.m; sourceTree = "<group>"; };
+		214075FC16A919B60083B776 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MaguroView.xib; sourceTree = "<group>"; };
+		2140760316A919B70083B776 /* MaguroTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaguroTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2140760416A919B70083B776 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2140760C16A919B70083B776 /* MaguroTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaguroTests-Info.plist"; sourceTree = "<group>"; };
+		2140760E16A919B70083B776 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2140761016A919B70083B776 /* MaguroTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaguroTests.h; sourceTree = "<group>"; };
+		2140761116A919B70083B776 /* MaguroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaguroTests.m; sourceTree = "<group>"; };
+		217F64FB16AD30E3005ECAE6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		217F64FC16AD30E3005ECAE6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		217F64FF16AD38D9005ECAE6 /* TDOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDOAuth.h; path = Class/TDOAuth.h; sourceTree = "<group>"; };
+		217F650016AD38D9005ECAE6 /* TDOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDOAuth.m; path = Class/TDOAuth.m; sourceTree = "<group>"; };
+		217F650216AD3C25005ECAE6 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		217F650316AD3C25005ECAE6 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		2193E05B16AE6DD300CF2805 /* MaguroBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroBaseViewController.h; path = Class/MaguroBaseViewController.h; sourceTree = "<group>"; };
+		2193E05C16AE6DD300CF2805 /* MaguroBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroBaseViewController.m; path = Class/MaguroBaseViewController.m; sourceTree = "<group>"; };
+		2193E05F16AE6EE600CF2805 /* MaguroArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroArticleViewController.h; path = Class/MaguroArticleViewController.h; sourceTree = "<group>"; };
+		2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroArticleViewController.m; path = Class/MaguroArticleViewController.m; sourceTree = "<group>"; };
+		21F7DBAE16A91EF800F92614 /* MaguroContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroContactUsViewController.h; path = Class/MaguroContactUsViewController.h; sourceTree = "<group>"; };
+		21F7DBAF16A91EF800F92614 /* MaguroContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroContactUsViewController.m; path = Class/MaguroContactUsViewController.m; sourceTree = "<group>"; };
+		21F7DBB116A91F1800F92614 /* Maguro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Maguro.h; path = Class/Maguro.h; sourceTree = "<group>"; };
+		21F7DBB216A91F1800F92614 /* Maguro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Maguro.m; path = Class/Maguro.m; sourceTree = "<group>"; };
+		21F7DBBB16A91FCA00F92614 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Maguro.strings; sourceTree = "<group>"; };
+		21F7DBBC16A91FCA00F92614 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Maguro.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		214075D916A919B60083B776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214075E116A919B60083B776 /* UIKit.framework in Frameworks */,
+				214075E316A919B60083B776 /* Foundation.framework in Frameworks */,
+				214075E516A919B60083B776 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		214075FF16A919B70083B776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2140760516A919B70083B776 /* SenTestingKit.framework in Frameworks */,
+				2140760616A919B70083B776 /* UIKit.framework in Frameworks */,
+				2140760716A919B70083B776 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2121FFBA16ACE7F50024CB16 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2121FFB816ACE7E60024CB16 /* icon-57.png */,
+				2121FFB616ACE7E10024CB16 /* icon-72.png */,
+				2121FFB416ACE7AC0024CB16 /* icon-144.png */,
+				2121FFB216ACE7A40024CB16 /* icon-114.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		214075D116A919B60083B776 = {
+			isa = PBXGroup;
+			children = (
+				214075E616A919B60083B776 /* Maguro */,
+				2140760A16A919B70083B776 /* MaguroTests */,
+				214075DF16A919B60083B776 /* Frameworks */,
+				214075DD16A919B60083B776 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		214075DD16A919B60083B776 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				214075DC16A919B60083B776 /* Maguro.app */,
+				2140760316A919B70083B776 /* MaguroTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		214075DF16A919B60083B776 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				214075E016A919B60083B776 /* UIKit.framework */,
+				214075E216A919B60083B776 /* Foundation.framework */,
+				214075E416A919B60083B776 /* CoreGraphics.framework */,
+				2140760416A919B70083B776 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		214075E616A919B60083B776 /* Maguro */ = {
+			isa = PBXGroup;
+			children = (
+				2121FFBA16ACE7F50024CB16 /* Images */,
+				21F7DBAC16A91E6700F92614 /* Class */,
+				21F7DBB916A91FCA00F92614 /* Reference */,
+				214075EF16A919B60083B776 /* MaguroAppDelegate.h */,
+				214075F016A919B60083B776 /* MaguroAppDelegate.m */,
+				214075F816A919B60083B776 /* MaguroViewController.h */,
+				214075F916A919B60083B776 /* MaguroViewController.m */,
+				214075FB16A919B60083B776 /* MaguroView.xib */,
+				214075E716A919B60083B776 /* Supporting Files */,
+			);
+			path = Maguro;
+			sourceTree = "<group>";
+		};
+		214075E716A919B60083B776 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				214075E816A919B60083B776 /* Maguro-Info.plist */,
+				214075E916A919B60083B776 /* InfoPlist.strings */,
+				214075EC16A919B60083B776 /* main.m */,
+				214075EE16A919B60083B776 /* Maguro-Prefix.pch */,
+				214075F216A919B60083B776 /* Default.png */,
+				214075F416A919B60083B776 /* Default@2x.png */,
+				214075F616A919B60083B776 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2140760A16A919B70083B776 /* MaguroTests */ = {
+			isa = PBXGroup;
+			children = (
+				2140761016A919B70083B776 /* MaguroTests.h */,
+				2140761116A919B70083B776 /* MaguroTests.m */,
+				2140760B16A919B70083B776 /* Supporting Files */,
+			);
+			path = MaguroTests;
+			sourceTree = "<group>";
+		};
+		2140760B16A919B70083B776 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2140760C16A919B70083B776 /* MaguroTests-Info.plist */,
+				2140760D16A919B70083B776 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21F7DBAC16A91E6700F92614 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2121FFBB16ACECAA0024CB16 /* MaguroConfig.h */,
+				2121FFBC16ACECAA0024CB16 /* MaguroConfig.m */,
+				21F7DBB116A91F1800F92614 /* Maguro.h */,
+				21F7DBB216A91F1800F92614 /* Maguro.m */,
+				2193E05B16AE6DD300CF2805 /* MaguroBaseViewController.h */,
+				2193E05C16AE6DD300CF2805 /* MaguroBaseViewController.m */,
+				21F7DBAE16A91EF800F92614 /* MaguroContactUsViewController.h */,
+				21F7DBAF16A91EF800F92614 /* MaguroContactUsViewController.m */,
+				2193E05F16AE6EE600CF2805 /* MaguroArticleViewController.h */,
+				2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */,
+				217F64FB16AD30E3005ECAE6 /* MBProgressHUD.h */,
+				217F64FC16AD30E3005ECAE6 /* MBProgressHUD.m */,
+				217F64FF16AD38D9005ECAE6 /* TDOAuth.h */,
+				217F650016AD38D9005ECAE6 /* TDOAuth.m */,
+				217F650216AD3C25005ECAE6 /* JSONKit.h */,
+				217F650316AD3C25005ECAE6 /* JSONKit.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		21F7DBB916A91FCA00F92614 /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				21F7DBBA16A91FCA00F92614 /* Maguro.strings */,
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		214075DB16A919B60083B776 /* Maguro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2140761516A919B70083B776 /* Build configuration list for PBXNativeTarget "Maguro" */;
+			buildPhases = (
+				214075D816A919B60083B776 /* Sources */,
+				214075D916A919B60083B776 /* Frameworks */,
+				214075DA16A919B60083B776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Maguro;
+			productName = Maguro;
+			productReference = 214075DC16A919B60083B776 /* Maguro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2140760216A919B70083B776 /* MaguroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2140761816A919B70083B776 /* Build configuration list for PBXNativeTarget "MaguroTests" */;
+			buildPhases = (
+				214075FE16A919B70083B776 /* Sources */,
+				214075FF16A919B70083B776 /* Frameworks */,
+				2140760016A919B70083B776 /* Resources */,
+				2140760116A919B70083B776 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2140760916A919B70083B776 /* PBXTargetDependency */,
+			);
+			name = MaguroTests;
+			productName = MaguroTests;
+			productReference = 2140760316A919B70083B776 /* MaguroTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		214075D316A919B60083B776 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Maguro;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Accuvally Inc.";
+			};
+			buildConfigurationList = 214075D616A919B60083B776 /* Build configuration list for PBXProject "Maguro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hant",
+				ja,
+			);
+			mainGroup = 214075D116A919B60083B776;
+			productRefGroup = 214075DD16A919B60083B776 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				214075DB16A919B60083B776 /* Maguro */,
+				2140760216A919B70083B776 /* MaguroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		214075DA16A919B60083B776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214075EB16A919B60083B776 /* InfoPlist.strings in Resources */,
+				214075F316A919B60083B776 /* Default.png in Resources */,
+				214075F516A919B60083B776 /* Default@2x.png in Resources */,
+				214075F716A919B60083B776 /* Default-568h@2x.png in Resources */,
+				214075FD16A919B60083B776 /* MaguroView.xib in Resources */,
+				21F7DBBD16A91FCA00F92614 /* Maguro.strings in Resources */,
+				2121FFB316ACE7A40024CB16 /* icon-114.png in Resources */,
+				2121FFB516ACE7AC0024CB16 /* icon-144.png in Resources */,
+				2121FFB716ACE7E10024CB16 /* icon-72.png in Resources */,
+				2121FFB916ACE7E60024CB16 /* icon-57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2140760016A919B70083B776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2140760F16A919B70083B776 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2140760116A919B70083B776 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		214075D816A919B60083B776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214075ED16A919B60083B776 /* main.m in Sources */,
+				214075F116A919B60083B776 /* MaguroAppDelegate.m in Sources */,
+				214075FA16A919B60083B776 /* MaguroViewController.m in Sources */,
+				21F7DBB016A91EF800F92614 /* MaguroContactUsViewController.m in Sources */,
+				21F7DBB316A91F1800F92614 /* Maguro.m in Sources */,
+				2121FFBD16ACECAA0024CB16 /* MaguroConfig.m in Sources */,
+				217F64FD16AD30E3005ECAE6 /* MBProgressHUD.m in Sources */,
+				217F650116AD38D9005ECAE6 /* TDOAuth.m in Sources */,
+				217F650416AD3C25005ECAE6 /* JSONKit.m in Sources */,
+				2193E05D16AE6DD300CF2805 /* MaguroBaseViewController.m in Sources */,
+				2193E06116AE6EE600CF2805 /* MaguroArticleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		214075FE16A919B70083B776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2140761216A919B70083B776 /* MaguroTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2140760916A919B70083B776 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 214075DB16A919B60083B776 /* Maguro */;
+			targetProxy = 2140760816A919B70083B776 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		214075E916A919B60083B776 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				214075EA16A919B60083B776 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		214075FB16A919B60083B776 /* MaguroView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				214075FC16A919B60083B776 /* en */,
+			);
+			name = MaguroView.xib;
+			sourceTree = "<group>";
+		};
+		2140760D16A919B70083B776 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2140760E16A919B70083B776 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		21F7DBBA16A91FCA00F92614 /* Maguro.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F7DBBB16A91FCA00F92614 /* en */,
+				21F7DBBC16A91FCA00F92614 /* zh-Hant */,
+			);
+			name = Maguro.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2140761316A919B70083B776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2140761416A919B70083B776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2140761616A919B70083B776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maguro/Maguro-Prefix.pch";
+				INFOPLIST_FILE = "Maguro/Maguro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2140761716A919B70083B776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maguro/Maguro-Prefix.pch";
+				INFOPLIST_FILE = "Maguro/Maguro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2140761916A919B70083B776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Maguro.app/Maguro";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maguro/Maguro-Prefix.pch";
+				INFOPLIST_FILE = "MaguroTests/MaguroTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2140761A16A919B70083B776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Maguro.app/Maguro";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maguro/Maguro-Prefix.pch";
+				INFOPLIST_FILE = "MaguroTests/MaguroTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		214075D616A919B60083B776 /* Build configuration list for PBXProject "Maguro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2140761316A919B70083B776 /* Debug */,
+				2140761416A919B70083B776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2140761516A919B70083B776 /* Build configuration list for PBXNativeTarget "Maguro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2140761616A919B70083B776 /* Debug */,
+				2140761716A919B70083B776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2140761816A919B70083B776 /* Build configuration list for PBXNativeTarget "MaguroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2140761916A919B70083B776 /* Debug */,
+				2140761A16A919B70083B776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 214075D316A919B60083B776 /* Project object */;
+}
