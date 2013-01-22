@@ -56,7 +56,7 @@ static Maguro *_instance;
     // set up navigation
     _navigation = [[UINavigationController alloc] initWithRootViewController:controller];
     _navigation.navigationBar.tintColor = _config.navigationTintColor;
-    _navigation.modalTransitionStyle = UIModalPresentationFullScreen;
+    _navigation.modalPresentationStyle = UIModalPresentationFormSheet;
     
     _rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
     [_rootViewController presentModalViewController:_navigation animated:YES];

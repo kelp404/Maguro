@@ -45,16 +45,18 @@
 {
     [super viewWillAppear:animated];
     
-    // register for keyboard notifications
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardDidShow:)
-                                                 name:UIKeyboardDidShowNotification
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillHide)
-                                                 name:UIKeyboardWillHideNotification
-                                               object:nil];
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        // register for keyboard notifications
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(keyboardDidShow:)
+                                                     name:UIKeyboardDidShowNotification
+                                                   object:nil];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(keyboardWillHide)
+                                                     name:UIKeyboardWillHideNotification
+                                                   object:nil];
+    }
 }
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -69,14 +71,16 @@
 {
     [super viewWillDisappear:animated];
     
-    // unregister for keyboard notifications while not visible.
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIKeyboardDidShowNotification
-                                                  object:nil];
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIKeyboardDidHideNotification
-                                                  object:nil];
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        // unregister for keyboard notifications while not visible.
+        [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                        name:UIKeyboardDidShowNotification
+                                                      object:nil];
+        
+        [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                        name:UIKeyboardDidHideNotification
+                                                      object:nil];
+    }
 }
 #pragma mark Keyboard
 - (void)keyboardDidShow:(NSNotification *)notification
@@ -141,6 +145,7 @@
                 _textName.autocapitalizationType = UITextAutocapitalizationTypeNone;
                 _textName.clearButtonMode = UITextFieldViewModeWhileEditing;
                 _textName.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+                _textName.returnKeyType = UIReturnKeyDone;
                 _textName.delegate = self;
             }
             cell.accessoryView =_textName;
@@ -155,6 +160,7 @@
                 _textEmail.autocapitalizationType = UITextAutocapitalizationTypeNone;
                 _textEmail.clearButtonMode = UITextFieldViewModeWhileEditing;
                 _textEmail.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+                _textEmail.returnKeyType = UIReturnKeyDone;
                 _textEmail.delegate = self;
             }
             cell.accessoryView = _textEmail;
@@ -212,7 +218,11 @@
 #pragma mark Select Row
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == SECTION_ANSWERS) {
+    if (indexPath.section == SECTION_USER) {
+        if (indexPath.row == 0) { [_textName becomeFirstResponder]; }
+        else { [_textEmail becomeFirstResponder]; }
+    }
+    else if (indexPath.section == SECTION_ANSWERS) {
         NSDictionary *article = [_answers objectAtIndex:indexPath.row];
         
         MaguroArticleViewController *controller = [MaguroArticleViewController new];
@@ -233,6 +243,11 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     _editingText = nil;
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 
