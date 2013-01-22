@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2105F2D316AE8B930061BA30 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2105F2D016AE8B930061BA30 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2105F2D416AE8B930061BA30 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2105F2D216AE8B930061BA30 /* MBProgressHUD.m */; };
 		2121FFB316ACE7A40024CB16 /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2121FFB216ACE7A40024CB16 /* icon-114.png */; };
 		2121FFB516ACE7AC0024CB16 /* icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 2121FFB416ACE7AC0024CB16 /* icon-144.png */; };
 		2121FFB716ACE7E10024CB16 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2121FFB616ACE7E10024CB16 /* icon-72.png */; };
@@ -28,9 +30,7 @@
 		2140760716A919B70083B776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214075E216A919B60083B776 /* Foundation.framework */; };
 		2140760F16A919B70083B776 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2140760D16A919B70083B776 /* InfoPlist.strings */; };
 		2140761216A919B70083B776 /* MaguroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2140761116A919B70083B776 /* MaguroTests.m */; };
-		217F64FD16AD30E3005ECAE6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 217F64FC16AD30E3005ECAE6 /* MBProgressHUD.m */; };
 		217F650116AD38D9005ECAE6 /* TDOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 217F650016AD38D9005ECAE6 /* TDOAuth.m */; };
-		217F650416AD3C25005ECAE6 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 217F650316AD3C25005ECAE6 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2193E05D16AE6DD300CF2805 /* MaguroBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2193E05C16AE6DD300CF2805 /* MaguroBaseViewController.m */; };
 		2193E06116AE6EE600CF2805 /* MaguroArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */; };
 		21F7DBB016A91EF800F92614 /* MaguroContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7DBAF16A91EF800F92614 /* MaguroContactUsViewController.m */; };
@@ -49,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2105F2CF16AE8B930061BA30 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = Class/JSONKit.h; sourceTree = "<group>"; };
+		2105F2D016AE8B930061BA30 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = Class/JSONKit.m; sourceTree = "<group>"; };
+		2105F2D116AE8B930061BA30 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Class/MBProgressHUD.h; sourceTree = "<group>"; };
+		2105F2D216AE8B930061BA30 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Class/MBProgressHUD.m; sourceTree = "<group>"; };
 		2121FFB216ACE7A40024CB16 /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-114.png"; path = "../icon-114.png"; sourceTree = "<group>"; };
 		2121FFB416ACE7AC0024CB16 /* icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-144.png"; path = "../icon-144.png"; sourceTree = "<group>"; };
 		2121FFB616ACE7E10024CB16 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "../icon-72.png"; sourceTree = "<group>"; };
@@ -77,12 +81,8 @@
 		2140760E16A919B70083B776 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2140761016A919B70083B776 /* MaguroTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaguroTests.h; sourceTree = "<group>"; };
 		2140761116A919B70083B776 /* MaguroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaguroTests.m; sourceTree = "<group>"; };
-		217F64FB16AD30E3005ECAE6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		217F64FC16AD30E3005ECAE6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		217F64FF16AD38D9005ECAE6 /* TDOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDOAuth.h; path = Class/TDOAuth.h; sourceTree = "<group>"; };
 		217F650016AD38D9005ECAE6 /* TDOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDOAuth.m; path = Class/TDOAuth.m; sourceTree = "<group>"; };
-		217F650216AD3C25005ECAE6 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		217F650316AD3C25005ECAE6 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		2193E05B16AE6DD300CF2805 /* MaguroBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroBaseViewController.h; path = Class/MaguroBaseViewController.h; sourceTree = "<group>"; };
 		2193E05C16AE6DD300CF2805 /* MaguroBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroBaseViewController.m; path = Class/MaguroBaseViewController.m; sourceTree = "<group>"; };
 		2193E05F16AE6EE600CF2805 /* MaguroArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroArticleViewController.h; path = Class/MaguroArticleViewController.h; sourceTree = "<group>"; };
@@ -222,12 +222,12 @@
 				21F7DBAF16A91EF800F92614 /* MaguroContactUsViewController.m */,
 				2193E05F16AE6EE600CF2805 /* MaguroArticleViewController.h */,
 				2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */,
-				217F64FB16AD30E3005ECAE6 /* MBProgressHUD.h */,
-				217F64FC16AD30E3005ECAE6 /* MBProgressHUD.m */,
 				217F64FF16AD38D9005ECAE6 /* TDOAuth.h */,
 				217F650016AD38D9005ECAE6 /* TDOAuth.m */,
-				217F650216AD3C25005ECAE6 /* JSONKit.h */,
-				217F650316AD3C25005ECAE6 /* JSONKit.m */,
+				2105F2CF16AE8B930061BA30 /* JSONKit.h */,
+				2105F2D016AE8B930061BA30 /* JSONKit.m */,
+				2105F2D116AE8B930061BA30 /* MBProgressHUD.h */,
+				2105F2D216AE8B930061BA30 /* MBProgressHUD.m */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -364,11 +364,11 @@
 				21F7DBB016A91EF800F92614 /* MaguroContactUsViewController.m in Sources */,
 				21F7DBB316A91F1800F92614 /* Maguro.m in Sources */,
 				2121FFBD16ACECAA0024CB16 /* MaguroConfig.m in Sources */,
-				217F64FD16AD30E3005ECAE6 /* MBProgressHUD.m in Sources */,
 				217F650116AD38D9005ECAE6 /* TDOAuth.m in Sources */,
-				217F650416AD3C25005ECAE6 /* JSONKit.m in Sources */,
 				2193E05D16AE6DD300CF2805 /* MaguroBaseViewController.m in Sources */,
 				2193E06116AE6EE600CF2805 /* MaguroArticleViewController.m in Sources */,
+				2105F2D316AE8B930061BA30 /* JSONKit.m in Sources */,
+				2105F2D416AE8B930061BA30 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
