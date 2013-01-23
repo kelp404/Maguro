@@ -7,6 +7,7 @@
 //
 
 #import "Maguro.h"
+#import "MaguroNavigationViewController.h"
 #import "MaguroContactUsViewController.h"
 #import "TDOAuth.h"
 #import "JSONKit.h"
@@ -53,7 +54,7 @@ static Maguro *_instance;
     controller.delegate = self;
     
     // set up navigation
-    _navigation = [[UINavigationController alloc] initWithRootViewController:controller];
+    _navigation = [[MaguroNavigationViewController alloc] initWithRootViewController:controller];
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         _navigation.navigationBar.tintColor = _config.navigationTintColor;
     }

@@ -33,6 +33,7 @@
 		217F650116AD38D9005ECAE6 /* TDOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 217F650016AD38D9005ECAE6 /* TDOAuth.m */; };
 		2193E05D16AE6DD300CF2805 /* MaguroBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2193E05C16AE6DD300CF2805 /* MaguroBaseViewController.m */; };
 		2193E06116AE6EE600CF2805 /* MaguroArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */; };
+		21DF47AB16AF95F200AB8E41 /* MaguroNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DF47AA16AF95F200AB8E41 /* MaguroNavigationViewController.m */; };
 		21F7DBB016A91EF800F92614 /* MaguroContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7DBAF16A91EF800F92614 /* MaguroContactUsViewController.m */; };
 		21F7DBB316A91F1800F92614 /* Maguro.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7DBB216A91F1800F92614 /* Maguro.m */; };
 		21F7DBBD16A91FCA00F92614 /* Maguro.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21F7DBBA16A91FCA00F92614 /* Maguro.strings */; };
@@ -87,6 +88,8 @@
 		2193E05C16AE6DD300CF2805 /* MaguroBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroBaseViewController.m; path = Class/MaguroBaseViewController.m; sourceTree = "<group>"; };
 		2193E05F16AE6EE600CF2805 /* MaguroArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroArticleViewController.h; path = Class/MaguroArticleViewController.h; sourceTree = "<group>"; };
 		2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroArticleViewController.m; path = Class/MaguroArticleViewController.m; sourceTree = "<group>"; };
+		21DF47A916AF95F200AB8E41 /* MaguroNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroNavigationViewController.h; path = Class/MaguroNavigationViewController.h; sourceTree = "<group>"; };
+		21DF47AA16AF95F200AB8E41 /* MaguroNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroNavigationViewController.m; path = Class/MaguroNavigationViewController.m; sourceTree = "<group>"; };
 		21F7DBAE16A91EF800F92614 /* MaguroContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroContactUsViewController.h; path = Class/MaguroContactUsViewController.h; sourceTree = "<group>"; };
 		21F7DBAF16A91EF800F92614 /* MaguroContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroContactUsViewController.m; path = Class/MaguroContactUsViewController.m; sourceTree = "<group>"; };
 		21F7DBB116A91F1800F92614 /* Maguro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Maguro.h; path = Class/Maguro.h; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 				21F7DBAF16A91EF800F92614 /* MaguroContactUsViewController.m */,
 				2193E05F16AE6EE600CF2805 /* MaguroArticleViewController.h */,
 				2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */,
+				21DF47A916AF95F200AB8E41 /* MaguroNavigationViewController.h */,
+				21DF47AA16AF95F200AB8E41 /* MaguroNavigationViewController.m */,
 				217F64FF16AD38D9005ECAE6 /* TDOAuth.h */,
 				217F650016AD38D9005ECAE6 /* TDOAuth.m */,
 				2105F2CF16AE8B930061BA30 /* JSONKit.h */,
@@ -369,6 +374,7 @@
 				2193E06116AE6EE600CF2805 /* MaguroArticleViewController.m in Sources */,
 				2105F2D316AE8B930061BA30 /* JSONKit.m in Sources */,
 				2105F2D416AE8B930061BA30 /* MBProgressHUD.m in Sources */,
+				21DF47AB16AF95F200AB8E41 /* MaguroNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
