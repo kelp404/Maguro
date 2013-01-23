@@ -54,7 +54,9 @@ static Maguro *_instance;
     
     // set up navigation
     _navigation = [[UINavigationController alloc] initWithRootViewController:controller];
-    _navigation.navigationBar.tintColor = _config.navigationTintColor;
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        _navigation.navigationBar.tintColor = _config.navigationTintColor;
+    }
     _navigation.modalPresentationStyle = UIModalPresentationFormSheet;
     
     _rootViewController = parentViewController;
