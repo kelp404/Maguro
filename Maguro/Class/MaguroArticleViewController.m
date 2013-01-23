@@ -29,6 +29,9 @@
     // set up activity indicatorView
     _activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     _activityIndicator.hidesWhenStopped = YES;
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        _activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    }
     [_activityIndicator startAnimating];
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithCustomView:_activityIndicator];
     self.navigationItem.rightBarButtonItem = rightButton;
