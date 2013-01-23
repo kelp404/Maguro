@@ -29,6 +29,7 @@
     UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(clickClose:)];
     self.navigationItem.leftBarButtonItem = closeButton;
     UIBarButtonItem *continueButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Continue", @"Maguro", @"continue") style:UIBarButtonItemStylePlain target:self action:@selector(clickContinue:)];
+    [continueButton setEnabled:NO];
     self.navigationItem.rightBarButtonItem = continueButton;
     
     // set up tableview
@@ -127,10 +128,14 @@
             _textMessage.font = [UIFont systemFontOfSize:17];
             _textMessage.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             _textMessage.backgroundColor = [UIColor clearColor];
+            _textMessage.delegate = self;
             
             // load message from user defaults
             NSString *message = [[NSUserDefaults standardUserDefaults] objectForKey:MAGURO_USER_DEFAULTS_MESSAGE];
-            if (message) { _textMessage.text = message; }
+            if (message && message.length > 0) {
+                _textMessage.text = message;
+                [self.navigationItem.rightBarButtonItem setEnabled:YES];
+            }
         }
         [cell addSubview:_textMessage];
     }
@@ -235,6 +240,11 @@
 }
 
 
+#pragma mark - TextView Delegate
+- (void)textViewDidChange:(UITextView *)textView
+{
+    [self.navigationItem.rightBarButtonItem setEnabled:(textView.text.length > 0)];
+}
 #pragma mark - TextField Delegate
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {

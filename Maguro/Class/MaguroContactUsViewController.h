@@ -12,7 +12,7 @@
 @class Maguro;
 @class MBProgressHUD;
 
-@interface MaguroContactUsViewController : MaguroBaseViewController <UIActionSheetDelegate, UITextFieldDelegate, UIAlertViewDelegate, UITableViewDataSource, UITableViewDelegate> {
+@interface MaguroContactUsViewController : MaguroBaseViewController <UIActionSheetDelegate, UITextFieldDelegate, UITextViewDelegate, UIAlertViewDelegate, UITableViewDataSource, UITableViewDelegate> {
     MBProgressHUD *_hud;
     
     // UI
