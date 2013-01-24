@@ -9,7 +9,7 @@
 #import "Maguro.h"
 #import "MaguroNavigationViewController.h"
 #import "MaguroContactUsViewController.h"
-#import "TDOAuth.h"
+#import "KOAuth.h"
 #import "JSONKit.h"
 
 #if defined (__GNUC__) && (__GNUC__ >= 4)
@@ -70,7 +70,7 @@ static Maguro *_instance;
 - (void)requestForInstantAnswers:(NSString *)query errorHandler:(void (^)(NSError *error))errorHandler completionHandler:(void (^)(NSDictionary *document))completionHandler
 {
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@%@", _config.site, URI_INSTANT_ANSWERS]];
-    NSMutableURLRequest *request = [TDOAuth URLRequestForUrl:url
+    NSMutableURLRequest *request = [KOAuth URLRequestForUrl:url
                                                GETParameters:@{@"query": query}
                                                  consumerKey:_config.key
                                               consumerSecret:_config.secret
@@ -111,7 +111,7 @@ static Maguro *_instance;
 - (void)requestForSubmitTicket:(NSString *)message errorHandler:(void (^)(NSError *error))errorHandler completionHandler:(void (^)(NSDictionary *document))completionHandler
 {
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@%@", _config.site, URI_SUBMIT_TICKET]];
-    NSMutableURLRequest *request = [TDOAuth URLRequestForUrl:url
+    NSMutableURLRequest *request = [KOAuth URLRequestForUrl:url
                                               POSTParameters:@{@"email": _config.email,
                                                                         @"name": _config.name,
                                                                         @"ticket[subject]": _config.subject,
