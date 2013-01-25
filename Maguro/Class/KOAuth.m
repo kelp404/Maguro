@@ -105,7 +105,7 @@ KOAUTH_BURST_LINK NSString *base64(const uint8_t *input);
     CCHmacUpdate(&cx, sigbase.bytes, sigbase.length);
     CCHmacFinal(&cx, digest);
     
-	return base64(digest);
+    return base64(digest);
 }
 KOAUTH_BURST_LINK NSString *signatureBase(NSMutableDictionary *params, NSMutableDictionary *queryParams, NSString *method, NSURL *url)
 {
@@ -224,9 +224,7 @@ KOAUTH_BURST_LINK NSString *signatureBase(NSMutableDictionary *params, NSMutable
     return request;
 }
 #pragma mark request for request_token
-+ (NSMutableURLRequest *)URLRequestForRequestTokenWithUrl:(NSURL *)url
-                                              consumerKey:(NSString *)consumerKey
-                                           consumerSecret:(NSString *)consumerSecret
++ (NSMutableURLRequest *)URLRequestForRequestTokenWithUrl:(NSURL *)url consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret
 {
     if (!url)
         return nil;
@@ -244,9 +242,9 @@ KOAUTH_BURST_LINK NSString *signatureBase(NSMutableDictionary *params, NSMutable
 	
     KOAuth *oauth = [[KOAuth alloc] initForAccessTokenWithConsumerKey:consumerKey
                                                       consumerSecret:consumerSecret
-														requestToken:requestToken
-														 tokenSecret:tokenSecret
-														oauthVerfier:oauthVerfier];
+                                                         requestToken:requestToken
+                                                          tokenSecret:tokenSecret
+                                                         oauthVerfier:oauthVerfier];
 	
     NSMutableURLRequest *rq = [oauth getRequestWittURL:url andMethod:@"POST"];
     return rq;
@@ -257,9 +255,9 @@ KOAUTH_BURST_LINK NSString *signatureBase(NSMutableDictionary *params, NSMutable
 KOAUTH_BURST_LINK NSString *urlEncode(NSString *source)
 {
     CFStringRef cfstring = CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef) source, NULL, (CFStringRef) @"!*'();:@&=+$,/?%#[]", kCFStringEncodingUTF8);
-    NSString *rv = (__bridge NSString *)cfstring;
+    NSString *result = [NSString stringWithString:(__bridge NSString *)cfstring];
     CFRelease(cfstring);
-    return rv;
+    return result;
 }
 // remove the last char of source string
 KOAUTH_BURST_LINK void chomp(NSMutableString *source)
@@ -272,7 +270,7 @@ KOAUTH_BURST_LINK NSString *nonce()
     CFUUIDRef uuid = CFUUIDCreate(NULL);
     CFStringRef s = CFUUIDCreateString(NULL, uuid);
     CFRelease(uuid);
-    NSString *result = (__bridge NSString *)s;
+    NSString *result = [NSString stringWithString:(__bridge NSString *)s];
     CFRelease(s);
     return [result substringToIndex:8];
 }
