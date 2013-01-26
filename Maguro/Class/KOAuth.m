@@ -267,12 +267,18 @@ KOAUTH_BURST_LINK void chomp(NSMutableString *source)
 }
 KOAUTH_BURST_LINK NSString *nonce()
 {
-    CFUUIDRef uuid = CFUUIDCreate(NULL);
-    CFStringRef s = CFUUIDCreateString(NULL, uuid);
-    CFRelease(uuid);
-    NSString *result = [NSString stringWithString:(__bridge NSString *)s];
-    CFRelease(s);
-    return [result substringToIndex:8];
+    static const char map[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    char *buffer = malloc(6);
+    NSUInteger selector;
+    for (NSUInteger index = 0; index < 5; index++) {
+        selector = arc4random() % 62;
+        buffer[index] = map[selector];
+    }
+    buffer[5] = '\0';
+    NSString *result = [NSString stringWithCString:buffer encoding:NSASCIIStringEncoding];
+    free(buffer);
+    
+    return result;
 }
 KOAUTH_BURST_LINK NSString *timestamp()
 {

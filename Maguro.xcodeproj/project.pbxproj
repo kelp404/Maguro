@@ -292,7 +292,7 @@
 			attributes = {
 				CLASSPREFIX = Maguro;
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Accuvally Inc.";
+				ORGANIZATIONNAME = "";
 			};
 			buildConfigurationList = 214075D616A919B60083B776 /* Build configuration list for PBXProject "Maguro" */;
 			compatibilityVersion = "Xcode 3.2";

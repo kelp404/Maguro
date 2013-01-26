@@ -3,7 +3,6 @@
 //  Maguro
 //
 //  Created by Kelp on 2013/01/21.
-//  Copyright (c) 2013 Accuvally Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
