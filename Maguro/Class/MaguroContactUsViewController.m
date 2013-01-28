@@ -106,12 +106,6 @@
         _tableView.frame = frame;
     }];
 }
-#pragma mark Orientation
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
-{
-    @try { return [_delegate.rootViewController shouldAutorotateToInterfaceOrientation:orientation]; }
-    @catch (NSException *exception) { return NO; }
-}
 
 
 #pragma mark - TableView Delegate

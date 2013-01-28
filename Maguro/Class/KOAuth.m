@@ -218,7 +218,6 @@ KOAUTH_BURST_LINK NSString *signatureBase(NSMutableDictionary *params, NSMutable
     if (postbody.length) {
         [request setHTTPBody:[postbody dataUsingEncoding:NSUTF8StringEncoding]];
         [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-        [request setValue:[NSString stringWithFormat:@"%u", request.HTTPBody.length] forHTTPHeaderField:@"Content-Length"];
     }
 	
     return request;

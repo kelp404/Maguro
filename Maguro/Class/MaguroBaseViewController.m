@@ -17,6 +17,7 @@
 
 @synthesize delegate = _delegate;
 
+#pragma mark - View Events
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,6 +32,12 @@
         _cellBound.width = 30;
     }
     self.view.backgroundColor = _delegate.config.backgroundColor;
+}
+#pragma mark Orientation for iOS 5
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
+{
+    @try { return [_delegate.rootViewController shouldAutorotateToInterfaceOrientation:orientation]; }
+    @catch (NSException *exception) { return NO; }
 }
 
 @end
