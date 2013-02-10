@@ -260,12 +260,22 @@
 {
     [self.view endEditing:YES];
     
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
-                                                             delegate:self
-                                                    cancelButtonTitle:NSLocalizedStringFromTable(@"Cancel", @"Maguro", @"Cancel")
-                                               destructiveButtonTitle:NSLocalizedStringFromTable(@"Don't save", @"Maguro", @"Don't save")
-                                                    otherButtonTitles:NSLocalizedStringFromTable(@"Save draft", @"Maguro", @"Save draft"), nil];
-    [actionSheet showFromBarButtonItem:sender animated:YES];
+    if (_textMessage.text.length > 0) {
+        // show action sheet
+        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
+                                                                 delegate:self
+                                                        cancelButtonTitle:NSLocalizedStringFromTable(@"Cancel", @"Maguro", @"Cancel")
+                                                   destructiveButtonTitle:NSLocalizedStringFromTable(@"Don't save", @"Maguro", @"Don't save")
+                                                        otherButtonTitles:NSLocalizedStringFromTable(@"Save draft", @"Maguro", @"Save draft"), nil];
+        [actionSheet showFromBarButtonItem:sender animated:YES];
+    }
+    else {
+        // close maguro (clear save message)
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:MAGURO_USER_DEFAULTS_MESSAGE];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [self.navigationController dismissModalViewControllerAnimated:YES];
+        [_delegate closed];
+    }
 }
 // load instant_answers, than goto next step
 - (void)clickContinue:(UIBarButtonItem *)sender
