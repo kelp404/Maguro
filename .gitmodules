@@ -1,3 +1,4 @@
 [submodule "KOAuth"]
 	path = KOAuth
 	url = git://github.com/Kelp404/KOAuth.git
+	ignore = dirty
