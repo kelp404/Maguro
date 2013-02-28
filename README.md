@@ -7,7 +7,7 @@ Kelp http://kelp.phate.org/
 
   Contact Us View  |  Search Knowledge Base  |  Knowledge Base
 :---------:|:---------:|:---------:
-<img src='https://raw.github.com/Kelp404/Maguro/master/Images/01.png' height='500px' width='257px' /> | <img src='https://raw.github.com/Kelp404/Maguro/master/Images/02.png' height='500px' width='257px' /> | <img src='https://raw.github.com/Kelp404/Maguro/master/Images/03.png' height='500px' width='257px' />
+<img src='https://raw.github.com/Kelp404/Maguro/master/_images/01.png' height='500px' width='257px' /> | <img src='https://raw.github.com/Kelp404/Maguro/master/_images/02.png' height='500px' width='257px' /> | <img src='https://raw.github.com/Kelp404/Maguro/master/_images/03.png' height='500px' width='257px' />
 
 
 
