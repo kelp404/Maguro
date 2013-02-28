@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		2105F2D316AE8B930061BA30 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2105F2D016AE8B930061BA30 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2105F2D416AE8B930061BA30 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2105F2D216AE8B930061BA30 /* MBProgressHUD.m */; };
-		2121FFB316ACE7A40024CB16 /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2121FFB216ACE7A40024CB16 /* icon-114.png */; };
-		2121FFB516ACE7AC0024CB16 /* icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 2121FFB416ACE7AC0024CB16 /* icon-144.png */; };
-		2121FFB716ACE7E10024CB16 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2121FFB616ACE7E10024CB16 /* icon-72.png */; };
-		2121FFB916ACE7E60024CB16 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2121FFB816ACE7E60024CB16 /* icon-57.png */; };
 		2121FFBD16ACECAA0024CB16 /* MaguroConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2121FFBC16ACECAA0024CB16 /* MaguroConfig.m */; };
 		214075E116A919B60083B776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214075E016A919B60083B776 /* UIKit.framework */; };
 		214075E316A919B60083B776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214075E216A919B60083B776 /* Foundation.framework */; };
@@ -34,9 +30,13 @@
 		2193E06116AE6EE600CF2805 /* MaguroArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */; };
 		21DF47AB16AF95F200AB8E41 /* MaguroNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DF47AA16AF95F200AB8E41 /* MaguroNavigationViewController.m */; };
 		21EA547716DF5CD100C63026 /* KOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA547616DF5CD100C63026 /* KOAuth.m */; };
+		21EA547E16DF5FC900C63026 /* Maguro.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21EA547B16DF5FC900C63026 /* Maguro.strings */; };
+		21EA548316DF5FDA00C63026 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EA547F16DF5FDA00C63026 /* icon-57.png */; };
+		21EA548416DF5FDA00C63026 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EA548016DF5FDA00C63026 /* icon-72.png */; };
+		21EA548516DF5FDA00C63026 /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EA548116DF5FDA00C63026 /* icon-114.png */; };
+		21EA548616DF5FDA00C63026 /* icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EA548216DF5FDA00C63026 /* icon-144.png */; };
 		21F7DBB016A91EF800F92614 /* MaguroContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7DBAF16A91EF800F92614 /* MaguroContactUsViewController.m */; };
 		21F7DBB316A91F1800F92614 /* Maguro.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7DBB216A91F1800F92614 /* Maguro.m */; };
-		21F7DBBD16A91FCA00F92614 /* Maguro.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21F7DBBA16A91FCA00F92614 /* Maguro.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +54,6 @@
 		2105F2D016AE8B930061BA30 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = Class/JSONKit.m; sourceTree = "<group>"; };
 		2105F2D116AE8B930061BA30 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Class/MBProgressHUD.h; sourceTree = "<group>"; };
 		2105F2D216AE8B930061BA30 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Class/MBProgressHUD.m; sourceTree = "<group>"; };
-		2121FFB216ACE7A40024CB16 /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-114.png"; path = "../icon-114.png"; sourceTree = "<group>"; };
-		2121FFB416ACE7AC0024CB16 /* icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-144.png"; path = "../icon-144.png"; sourceTree = "<group>"; };
-		2121FFB616ACE7E10024CB16 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "../icon-72.png"; sourceTree = "<group>"; };
-		2121FFB816ACE7E60024CB16 /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-57.png"; path = "../icon-57.png"; sourceTree = "<group>"; };
 		2121FFBB16ACECAA0024CB16 /* MaguroConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroConfig.h; path = Class/MaguroConfig.h; sourceTree = "<group>"; };
 		2121FFBC16ACECAA0024CB16 /* MaguroConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroConfig.m; path = Class/MaguroConfig.m; sourceTree = "<group>"; };
 		214075DC16A919B60083B776 /* Maguro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maguro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,12 +86,16 @@
 		21DF47AA16AF95F200AB8E41 /* MaguroNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroNavigationViewController.m; path = Class/MaguroNavigationViewController.m; sourceTree = "<group>"; };
 		21EA547516DF5CD100C63026 /* KOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KOAuth.h; path = KOAuth/KOAuth.h; sourceTree = SOURCE_ROOT; };
 		21EA547616DF5CD100C63026 /* KOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KOAuth.m; path = KOAuth/KOAuth.m; sourceTree = SOURCE_ROOT; };
+		21EA547C16DF5FC900C63026 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Maguro.strings; sourceTree = "<group>"; };
+		21EA547D16DF5FC900C63026 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Maguro.strings"; sourceTree = "<group>"; };
+		21EA547F16DF5FDA00C63026 /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
+		21EA548016DF5FDA00C63026 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		21EA548116DF5FDA00C63026 /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
+		21EA548216DF5FDA00C63026 /* icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-144.png"; sourceTree = "<group>"; };
 		21F7DBAE16A91EF800F92614 /* MaguroContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroContactUsViewController.h; path = Class/MaguroContactUsViewController.h; sourceTree = "<group>"; };
 		21F7DBAF16A91EF800F92614 /* MaguroContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroContactUsViewController.m; path = Class/MaguroContactUsViewController.m; sourceTree = "<group>"; };
 		21F7DBB116A91F1800F92614 /* Maguro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Maguro.h; path = Class/Maguro.h; sourceTree = "<group>"; };
 		21F7DBB216A91F1800F92614 /* Maguro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Maguro.m; path = Class/Maguro.m; sourceTree = "<group>"; };
-		21F7DBBB16A91FCA00F92614 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Maguro.strings; sourceTree = "<group>"; };
-		21F7DBBC16A91FCA00F92614 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Maguro.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,17 +122,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2121FFBA16ACE7F50024CB16 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				2121FFB816ACE7E60024CB16 /* icon-57.png */,
-				2121FFB616ACE7E10024CB16 /* icon-72.png */,
-				2121FFB416ACE7AC0024CB16 /* icon-144.png */,
-				2121FFB216ACE7A40024CB16 /* icon-114.png */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
 		214075D116A919B60083B776 = {
 			isa = PBXGroup;
 			children = (
@@ -166,9 +155,12 @@
 		214075E616A919B60083B776 /* Maguro */ = {
 			isa = PBXGroup;
 			children = (
-				2121FFBA16ACE7F50024CB16 /* Images */,
 				21F7DBAC16A91E6700F92614 /* Class */,
-				21F7DBB916A91FCA00F92614 /* Reference */,
+				21EA547A16DF5FC900C63026 /* Resource */,
+				21EA547F16DF5FDA00C63026 /* icon-57.png */,
+				21EA548016DF5FDA00C63026 /* icon-72.png */,
+				21EA548116DF5FDA00C63026 /* icon-114.png */,
+				21EA548216DF5FDA00C63026 /* icon-144.png */,
 				214075EF16A919B60083B776 /* MaguroAppDelegate.h */,
 				214075F016A919B60083B776 /* MaguroAppDelegate.m */,
 				214075F816A919B60083B776 /* MaguroViewController.h */,
@@ -212,6 +204,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		21EA547A16DF5FC900C63026 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				21EA547B16DF5FC900C63026 /* Maguro.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		21F7DBAC16A91E6700F92614 /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,14 +235,6 @@
 				2105F2D216AE8B930061BA30 /* MBProgressHUD.m */,
 			);
 			name = Class;
-			sourceTree = "<group>";
-		};
-		21F7DBB916A91FCA00F92614 /* Reference */ = {
-			isa = PBXGroup;
-			children = (
-				21F7DBBA16A91FCA00F92614 /* Maguro.strings */,
-			);
-			path = Reference;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,11 +316,11 @@
 				214075F516A919B60083B776 /* Default@2x.png in Resources */,
 				214075F716A919B60083B776 /* Default-568h@2x.png in Resources */,
 				214075FD16A919B60083B776 /* MaguroView.xib in Resources */,
-				21F7DBBD16A91FCA00F92614 /* Maguro.strings in Resources */,
-				2121FFB316ACE7A40024CB16 /* icon-114.png in Resources */,
-				2121FFB516ACE7AC0024CB16 /* icon-144.png in Resources */,
-				2121FFB716ACE7E10024CB16 /* icon-72.png in Resources */,
-				2121FFB916ACE7E60024CB16 /* icon-57.png in Resources */,
+				21EA547E16DF5FC900C63026 /* Maguro.strings in Resources */,
+				21EA548316DF5FDA00C63026 /* icon-57.png in Resources */,
+				21EA548416DF5FDA00C63026 /* icon-72.png in Resources */,
+				21EA548516DF5FDA00C63026 /* icon-114.png in Resources */,
+				21EA548616DF5FDA00C63026 /* icon-144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,11 +413,11 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		21F7DBBA16A91FCA00F92614 /* Maguro.strings */ = {
+		21EA547B16DF5FC900C63026 /* Maguro.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				21F7DBBB16A91FCA00F92614 /* en */,
-				21F7DBBC16A91FCA00F92614 /* zh-Hant */,
+				21EA547C16DF5FC900C63026 /* en */,
+				21EA547D16DF5FC900C63026 /* zh-Hant */,
 			);
 			name = Maguro.strings;
 			sourceTree = "<group>";
