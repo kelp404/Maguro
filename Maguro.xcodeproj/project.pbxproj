@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2105F2D316AE8B930061BA30 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2105F2D016AE8B930061BA30 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2105F2D416AE8B930061BA30 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2105F2D216AE8B930061BA30 /* MBProgressHUD.m */; };
 		2121FFBD16ACECAA0024CB16 /* MaguroConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2121FFBC16ACECAA0024CB16 /* MaguroConfig.m */; };
 		214075E116A919B60083B776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214075E016A919B60083B776 /* UIKit.framework */; };
@@ -28,6 +27,7 @@
 		2140761216A919B70083B776 /* MaguroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2140761116A919B70083B776 /* MaguroTests.m */; };
 		2193E05D16AE6DD300CF2805 /* MaguroBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2193E05C16AE6DD300CF2805 /* MaguroBaseViewController.m */; };
 		2193E06116AE6EE600CF2805 /* MaguroArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */; };
+		21CC714F16E0576E001527C1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CC714E16E0576E001527C1 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		21DF47AB16AF95F200AB8E41 /* MaguroNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DF47AA16AF95F200AB8E41 /* MaguroNavigationViewController.m */; };
 		21EA547716DF5CD100C63026 /* KOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA547616DF5CD100C63026 /* KOAuth.m */; };
 		21EA547E16DF5FC900C63026 /* Maguro.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21EA547B16DF5FC900C63026 /* Maguro.strings */; };
@@ -50,8 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2105F2CF16AE8B930061BA30 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = Class/JSONKit.h; sourceTree = "<group>"; };
-		2105F2D016AE8B930061BA30 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = Class/JSONKit.m; sourceTree = "<group>"; };
 		2105F2D116AE8B930061BA30 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Class/MBProgressHUD.h; sourceTree = "<group>"; };
 		2105F2D216AE8B930061BA30 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Class/MBProgressHUD.m; sourceTree = "<group>"; };
 		2121FFBB16ACECAA0024CB16 /* MaguroConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroConfig.h; path = Class/MaguroConfig.h; sourceTree = "<group>"; };
@@ -82,6 +80,8 @@
 		2193E05C16AE6DD300CF2805 /* MaguroBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroBaseViewController.m; path = Class/MaguroBaseViewController.m; sourceTree = "<group>"; };
 		2193E05F16AE6EE600CF2805 /* MaguroArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroArticleViewController.h; path = Class/MaguroArticleViewController.h; sourceTree = "<group>"; };
 		2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroArticleViewController.m; path = Class/MaguroArticleViewController.m; sourceTree = "<group>"; };
+		21CC714D16E0576E001527C1 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = SOURCE_ROOT; };
+		21CC714E16E0576E001527C1 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = SOURCE_ROOT; };
 		21DF47A916AF95F200AB8E41 /* MaguroNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaguroNavigationViewController.h; path = Class/MaguroNavigationViewController.h; sourceTree = "<group>"; };
 		21DF47AA16AF95F200AB8E41 /* MaguroNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaguroNavigationViewController.m; path = Class/MaguroNavigationViewController.m; sourceTree = "<group>"; };
 		21EA547516DF5CD100C63026 /* KOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KOAuth.h; path = KOAuth/KOAuth.h; sourceTree = SOURCE_ROOT; };
@@ -204,6 +204,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		21CC714C16E05705001527C1 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				21EA547516DF5CD100C63026 /* KOAuth.h */,
+				21EA547616DF5CD100C63026 /* KOAuth.m */,
+				21CC714D16E0576E001527C1 /* JSONKit.h */,
+				21CC714E16E0576E001527C1 /* JSONKit.m */,
+				2105F2D116AE8B930061BA30 /* MBProgressHUD.h */,
+				2105F2D216AE8B930061BA30 /* MBProgressHUD.m */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
 		21EA547A16DF5FC900C63026 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,12 +240,7 @@
 				2193E06016AE6EE600CF2805 /* MaguroArticleViewController.m */,
 				21DF47A916AF95F200AB8E41 /* MaguroNavigationViewController.h */,
 				21DF47AA16AF95F200AB8E41 /* MaguroNavigationViewController.m */,
-				2105F2CF16AE8B930061BA30 /* JSONKit.h */,
-				2105F2D016AE8B930061BA30 /* JSONKit.m */,
-				21EA547516DF5CD100C63026 /* KOAuth.h */,
-				21EA547616DF5CD100C63026 /* KOAuth.m */,
-				2105F2D116AE8B930061BA30 /* MBProgressHUD.h */,
-				2105F2D216AE8B930061BA30 /* MBProgressHUD.m */,
+				21CC714C16E05705001527C1 /* External */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -363,10 +371,10 @@
 				2121FFBD16ACECAA0024CB16 /* MaguroConfig.m in Sources */,
 				2193E05D16AE6DD300CF2805 /* MaguroBaseViewController.m in Sources */,
 				2193E06116AE6EE600CF2805 /* MaguroArticleViewController.m in Sources */,
-				2105F2D316AE8B930061BA30 /* JSONKit.m in Sources */,
 				2105F2D416AE8B930061BA30 /* MBProgressHUD.m in Sources */,
 				21DF47AB16AF95F200AB8E41 /* MaguroNavigationViewController.m in Sources */,
 				21EA547716DF5CD100C63026 /* KOAuth.m in Sources */,
+				21CC714F16E0576E001527C1 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
