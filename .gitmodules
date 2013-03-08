@@ -1,8 +1,8 @@
 [submodule "KOAuth"]
 	path = KOAuth
-	url = git://github.com/Kelp404/KOAuth.git
+	url = git://github.com/kelp404/KOAuth.git
 	ignore = dirty
 [submodule "JSONKit"]
 	path = JSONKit
-	url = git://github.com/Kelp404/JSONKit.git
+	url = git://github.com/kelp404/JSONKit.git
 	ignore = dirty
