@@ -12,7 +12,7 @@ git clone --recursive git://github.com/kelp404/Maguro.git
 
   Contact Us View  |  Search Knowledge Base  |  Knowledge Base
 :---------:|:---------:|:---------:
-<img src='https://raw.github.com/Kelp404/Maguro/master/_images/01.png' height='500px' width='257px' /> | <img src='https://raw.github.com/Kelp404/Maguro/master/_images/02.png' height='500px' width='257px' /> | <img src='https://raw.github.com/Kelp404/Maguro/master/_images/03.png' height='500px' width='257px' />
+<img src='https://raw.github.com/Kelp404/Maguro/master/_images/01.png'/> | <img src='https://raw.github.com/Kelp404/Maguro/master/_images/02.png'/> | <img src='https://raw.github.com/Kelp404/Maguro/master/_images/03.png'/>
 
 
 
